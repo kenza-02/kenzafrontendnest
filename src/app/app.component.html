@@ -1,0 +1,40 @@
+<nav class="navbar navbar-inverse bg-success">
+  <div class="container-fluid bg-default	">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" >
+        <span>KenzaScolar</span> |
+        <span>Lycée d'excellence</span>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a routerLink="eleve">Eleve</a></li>
+        <li >
+          <a  routerLink="classe">Classe</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          <span
+              class="glyphicon glyphicon-log-user"></span>
+            Mouhamadou MBALLO<span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Mon Profil</a></li>
+            <li><a href="?disconnect=1">Se déconnecter</a></li>
+
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="col-md-12 mt-2">
+  <router-outlet></router-outlet>
+</div>
